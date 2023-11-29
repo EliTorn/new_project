@@ -1,4 +1,6 @@
 import streamlit as st
+
+#my_file = __import__("app")
 from app import connect
 from PIL import Image
 
@@ -20,7 +22,7 @@ def page2() -> None:
 
         if st.button("Save Data"):
             # Make sure the directory exists
-            #connect(name, image_bit, amount)
+            connect(name, image_bit, amount)
 
             st.success('Data Save')
 
